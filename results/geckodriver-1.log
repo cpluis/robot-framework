@@ -1,0 +1,12 @@
+1638993988778	geckodriver	INFO	Listening on 127.0.0.1:60031
+1638993991992	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60032" "-no-remote" "-profile" "C:\\Users\\LUIS~1.PIR\\AppData\\Local\\Temp\\rust_mozprofileVzzhl7"
+1638993994585	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\luis.pires\\AppData\\Local\\Temp\\rust_mozprofileVzzhl7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60032/devtools/browser/5745de39-9de4-4643-9538-67dac9c7be6f
+1638994001202	Marionette	INFO	Listening on port 60040
+1638994001663	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638994005486	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1638995433026	Marionette	INFO	Stopped listening on port 60040
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
