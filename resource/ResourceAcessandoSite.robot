@@ -15,8 +15,6 @@ ${URL}         http://4alltests.com.br/
 Abrir navegador
     Open Browser     ${BROWSER}
   
-  
-
 ### Passo a Passo
 acessar a página login do sistema MGPT
     Go To   ${URL}

@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211220 22:14:34.041" rpa="false" schemaversion="2">
-<suite id="s1" name="TestLoginGSO" source="C:\Projetos\SuiteRobot\tests\TestLoginGSO.robot">
-<test id="s1-t1" name="Caso de Teste 02: Logar como preposto">
-<kw name="Abrir navegador" library="ResourceGSO">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211220 22:29:53.220" rpa="false" schemaversion="2">
+<suite id="s1" name="TestAcessandoSite" source="C:\Projetos\SuiteRobot\tests\TestAcessandoSite.robot">
+<test id="s1-t1" name="Caso de Teste 01: Acessando site">
+<kw name="Abrir navegador" library="ResourceAcessandoSite">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211220 22:14:34.346" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
-<msg timestamp="20211220 22:14:34.350" level="INFO">Firefox driver log is always forced to to: C:\Projetos\SuiteRobot\results\geckodriver-3.log</msg>
+<msg timestamp="20211220 22:29:53.575" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
+<msg timestamp="20211220 22:29:53.577" level="INFO">Firefox driver log is always forced to to: C:\Projetos\SuiteRobot\results\geckodriver-4.log</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211220 22:14:39.790" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20211220 22:14:39.789" endtime="20211220 22:14:39.790"/>
+<msg timestamp="20211220 22:30:00.489" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211220 22:30:00.442" endtime="20211220 22:30:00.489"/>
 </kw>
-<msg timestamp="20211220 22:14:39.826" level="FAIL">WebDriverException: Message: Process unexpectedly closed with status 0
+<msg timestamp="20211220 22:30:00.489" level="FAIL">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:181:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.jsm:310:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.js:828:11
 </msg>
-<status status="FAIL" starttime="20211220 22:14:34.346" endtime="20211220 22:14:39.826"/>
+<status status="FAIL" starttime="20211220 22:29:53.575" endtime="20211220 22:30:00.489"/>
 </kw>
-<status status="FAIL" starttime="20211220 22:14:34.345" endtime="20211220 22:14:39.827"/>
+<status status="FAIL" starttime="20211220 22:29:53.574" endtime="20211220 22:30:00.489"/>
 </kw>
-<kw name="acessar a página login do sistema MGPT" library="ResourceGSO">
-<status status="NOT RUN" starttime="20211220 22:14:39.828" endtime="20211220 22:14:39.829"/>
+<kw name="acessar a página login do sistema MGPT" library="ResourceAcessandoSite">
+<status status="NOT RUN" starttime="20211220 22:30:00.504" endtime="20211220 22:30:00.504"/>
 </kw>
-<status status="FAIL" starttime="20211220 22:14:34.344" endtime="20211220 22:14:39.829">WebDriverException: Message: Process unexpectedly closed with status 0
+<status status="FAIL" starttime="20211220 22:29:53.570" endtime="20211220 22:30:00.505">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:181:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.jsm:310:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.js:828:11
 </status>
 </test>
-<status status="FAIL" starttime="20211220 22:14:34.043" endtime="20211220 22:14:39.834"/>
+<status status="FAIL" starttime="20211220 22:29:53.220" endtime="20211220 22:30:00.507"/>
 </suite>
 <statistics>
 <total>
@@ -34,7 +42,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TestLoginGSO">TestLoginGSO</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestAcessandoSite">TestAcessandoSite</stat>
 </suite>
 </statistics>
 <errors>
